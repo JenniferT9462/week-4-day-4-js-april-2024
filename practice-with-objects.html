@@ -229,14 +229,29 @@
 
 <script>
   // TODO: make an array of some object
-  let arrayOfSomething = [
-    {},
-    {},
-    {}
+  let cars = [
+    {
+      make: "Kia",
+      type: "Hatchback",
+      color: "Latte"
+    },
+    { make: "Honda",
+      type: "Sedan",
+      color: "Red"
+    },
+    { make: "Chevorlett",
+      type: "Truck",
+      color: "Blue"
+    }
   ];
 
   // TODO: print them out to the document.
   // Think about combining what you know about arrays and objects. Ask for help if stuck!
+  document.write(`The first car is a ${cars[0].make}. It is a ${cars[0].type}. The color is ${cars[0].color}.`);
+  document.write("<br><br>");
+  document.write(`The second car is a ${cars[1].make}. It is a ${cars[1].type}. The color is ${cars[1].color}.`);
+  document.write("<br><br>");
+  document.write(`The third car is a ${cars[2].make}. It is a ${cars[2].type}. The color is ${cars[2].color}.`);
 
 </script>
   
