@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>JS Practice Day 4</title>
 </head>
 <body>
 <h1>Objects</h1>
@@ -155,9 +155,44 @@
 <script>
 
   // TODO: make at least 5 objects and assign them to variables
+  let game1 = {
+    title:"Baldur's Gate", 
+    genre:"Adventure", 
+    ageRating: "M for mature"
+   };
+  let game2 = {
+    title: "The Sims 4",
+    genre: "Simulation",
+    ageRating: "E for everyone"
+  };
+  let game3 = {
+    title: "MineCraft",
+    genre: "Sandbox",
+    ageRating: "for Everyone 10+"
+  };
+  let game4 = {
+    title: "Call of Duty",
+    genre: "Shooter",
+    ageRating: "M for mature"
+  };
+  let game5 = {
+    title: "Madden 24",
+    genre: "Sports",
+    ageRating: "E for Everyone"
+  };
 
 
   // TODO: write them out all to the document
+  document.write("<h4>Our Top 5 Games of the Month!</h4>")
+  document.write(`The first game is called ${game1.title}. It's a ${game1.genre} game. And is  ${game1.ageRating} audiences.`);
+  document.write("<br>")
+  document.write(`The second game is called ${game2.title}. It's a ${game2.genre} game. And is  ${game2.ageRating} audiences.`);
+  document.write("<br>")
+  document.write(`The third game is called ${game3.title}. It's a ${game3.genre} game. And is  ${game3.ageRating} audiences.`);
+  document.write("<br>")
+  document.write(`The fourth game is called ${game4.title}. It's a ${game4.genre} game. And is  ${game4.ageRating} audiences.`);
+  document.write("<br>")
+  document.write(`The fifth game is called ${game5.title}. It's a ${game5.genre} game. And is  ${game5.ageRating} audiences.`);
 
 
 </script>
