@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice Day 2</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+<p>Welcome to CodeX!</p>
+
+<h2>Variables and inputs</h2>
+
+<p>Inputs are data that are passed in from the outside.</p>
+
+<p>
+  Open this 
+  <a target="_blank" href="?yourName=Jake&hobby=Karate"> example link </a> in a new window in Glitch.
+</p>
+
+<h3>
+  Output:
+</h3>
+
+<script>
+  // EXAMPLES:
+  let params = new URLSearchParams(document.location.search);
+  let yourName = params.get("yourName");
+  let hobby = params.get("hobby");
+  document.write(`Hi ${yourName}, do you like ${hobby}?`);
+</script>
+
+<p>
+  Open this 
+  <a target="_blank" href="?yourName=Ami&yourJob=Developer"> example link </a> in a new window in Glitch.
+</p>
+
+<script>
+  // TODO: Try to access the search params for the link:
+  //       yourName=Ami&yourJob=Developer
+  //       follow the above example for reference
+  let yourJob = params.get("yourJob");
+  document.write(`Hi ${yourName}, do you like  your job as a ${yourJob}?`);
+ 
+</script>
+
+
+<p>
+  Open this 
+  <!-- TODO: Try with your own params  -->
+  <a target="_blank" href="?yourName=Jenn&sweetTreat=Ice+Cream"> example link </a> in a new window in Glitch.
+</p>
+
+<script>
+  // TODO: Try to access the search params for your link above:
+  //       ?yourName=JennsweetTreat=Ice+Cream
+  //       follow the above example for reference
+  
+  let sweetTreat = params.get("sweetTreat");
+  document.write(`Hiya ${yourName}. Your favorite Sweet Treat is ${sweetTreat}!`);
+</script>
+<br><br>
+
+<form>
+  <label>What is your Name?</label>
+  <br>
+  <input type="text" name="yourName">
+  <br>
+  <label>What is your hobby?</label>
+  <br>
+  <input type="text" name="hobby">
+  <br>
+  <label>What is your Job?</label>
+  <br>
+  <input type="text" name="yourJob">
+  <br>
+  <label>What is your favorite sweet treat?</label>
+  <br>
+  <input type="text" name="sweetTreat">
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+
+</html>

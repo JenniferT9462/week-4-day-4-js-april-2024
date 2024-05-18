@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice Day 3</title>
+</head>
+<body>
+    <h1>Accessing an array</h1>
+
+    <p class="img-of-array-1">
+      <img
+        title="diagram of array with people in seats"
+        src="https://cdn.glitch.global/ebdf8985-2fba-44be-941c-615679018f75/array-1.jpg?v=1715813191858"
+      />
+    </p>
+    
+    <p>
+      An array is a line of items. Each item has an index. An array of people's
+      names might look like this:
+    </p>
+    
+    <pre>
+      let array1 = ["andy", "betty", "cathy", "danna", "edward"];
+    </pre>
+    
+    <p>
+      We can access the first person in the line with the index for that person.
+      (The index starts at 0, because we are talking to a computer!)
+    </p>
+    
+    <pre>
+      array1 = ["andy", "betty", "cathy", "danna", "edward"];
+      document.write(array1[0]);
+    </pre>
+    
+    The first person is:
+    <script>
+      array1 = ["andy", "betty", "cathy", "danna", "edward"];
+      document.write(array1[0]);
+    </script>
+    
+    <p>
+      The second person is:
+      <script>
+        array1 = ["andy", "betty", "cathy", "danna", "edward"];
+        document.write(array1[1]);
+      </script>
+    </p>
+    
+    <p>
+      The third person is:
+      <script>
+        array1 = ["andy", "betty", "cathy", "danna", "edward"];
+        // TODO: write the person to the document
+        document.write(array1[2]);
+      </script>
+    </p>
+    
+    <p>
+      The fourth person is:
+      <script>
+        array1 = ["andy", "betty", "cathy", "danna", "edward"];
+        // TODO: write the person to the document
+        document.write(array1[3]);
+      </script>
+    </p>
+    
+    <p>
+      The fifth person is:
+      <script>
+        array1 = ["andy", "betty", "cathy", "danna", "edward"];
+        // TODO: write the person to the document
+        document.write(array1[4]);
+      </script>
+    </p>
+    
+   
+    
+    <h3>More practice with arrays</h3>
+    
+    <p>
+      Let's have a look at more arrays. In the next array we have a list of orders
+      of people in line getting icecream.
+    </p>
+    
+    <pre>
+      let iceCreamLine = [
+        "choco",
+        "pistachio",
+        "pistachio",
+        "choco",
+        "pistachio",
+        "choco",
+        "pistachio",
+        "choco",
+      ];
+    </pre>
+    
+    <h4>Ice Cream Task 1</h4>
+    
+    <p>
+      First, let's get print out the orders in order for the cashier. Start with the
+      first and go to the last.
+    </p>
+    
+    <p>
+      The first order is:
+      <script>
+        // Arrays
+        let iceCreamLine = [
+          "choco",
+          "pistachio",
+          "pistachio",
+          "choco",
+          "pistachio",
+          "choco",
+          "pistachio",
+          "choco",
+        ];
+        document.write(iceCreamLine[0]);
+      </script>
+    </p>
+    
+    <p>
+      The second order is:
+      <script>
+        document.write(iceCreamLine[1]);
+      </script>
+    </p>
+    
+    <p>
+      The thrid order is:
+      <script>
+        document.write(iceCreamLine[2]);
+      </script>
+    </p>
+    
+    <p>
+      <script>
+        document.write(`The fourth order is: `);
+        document.write(iceCreamLine[3]);
+        document.write("<br>");
+        document.write(`The fifth order is: `);
+        document.write(iceCreamLine[4]);
+        document.write("<br>");
+        document.write(`The sixth order is: `);
+        document.write(iceCreamLine[5]);
+        document.write("<br>");
+        document.write(`The seventh order is: `);
+        document.write(iceCreamLine[6]);
+        document.write("<br>");
+        document.write(`The eight order is: `);
+        document.write(iceCreamLine[7]);
+        document.write("<br>");
+      </script>
+    </p>
+    
+    <h3>Mix it up</h3>
+    
+    <p>
+      Arrays don't follow the rules of a queue. They are RANDOM ACCESS. You can
+      access any item at any time by idea. You can peek around corners, cut in line,
+      switch places, anything goes!
+    </p>
+    
+    <p>
+      In this example let's only access the chocolate orders. Maybe we have a
+      cachier who is running out of chocolate ice cream and needs to count just the
+      chocolate orders.
+    </p>
+    <p>
+      <strong>TODO: </strong> Your turn to list out only the pistachio orders by
+      index.
+    </p>
+    
+    <script>
+      // EXAMPLE: Write out all the choco's
+      document.write("<h4> Only Chocolate orders </h4>");
+      document.write(iceCreamLine[0]);
+      document.write("<br>");
+      document.write(iceCreamLine[3]);
+      document.write("<br>");
+      document.write(iceCreamLine[5]);
+      document.write("<br>");
+      document.write(iceCreamLine[7]);
+      document.write("<br>");
+    
+      // TODO: Write out all the pistachio's
+      document.write("<h4> Pistachio orders</h4>");
+      document.write(iceCreamLine[1]);
+      document.write("<br>");
+      document.write(iceCreamLine[2]);
+      document.write("<br>");
+      document.write(iceCreamLine[4]);
+      document.write("<br>");
+      document.write(iceCreamLine[6]);
+      document.write("<br>");
+    </script>
+    <h3>Let's try with candy now!</h3>
+    <p>Heres is a list of candy orders.</p>
+    <script>
+      let candyLine = [
+        "Nerds",
+        "Nerds",
+        "Sweet Tarts",
+        "Sweet Tarts",
+        "Sweet Tarts",
+        "Nerds",
+        "Sweet Tarts",
+        "Nerds",
+        "Sweet Tarts",
+      ];
+    
+      // TODO: Write out all the Nerds
+      document.write("<h4> Nerds </h4>");
+      document.write(candyLine[0]);
+      document.write("<br>");
+      document.write(candyLine[1]);
+      document.write("<br>");
+      document.write(candyLine[5]);
+      document.write("<br>");
+      document.write(candyLine[7]);
+      document.write("<br>");
+    
+      // TODO: Write out all the Sweet Tarts
+      document.write("<h4> Sweet Tarts </h4>");
+      document.write(candyLine[2]);
+      document.write("<br>");
+      document.write(candyLine[3]);
+      document.write("<br>");
+      document.write(candyLine[4]);
+      document.write("<br>");
+      document.write(candyLine[6]);
+      document.write("<br>");
+      document.write(candyLine[8]);
+      document.write("<br>");
+    </script>
+    
+    <script>
+      // TODO: Create an array of another type of desert. Include two or more kinds as above.
+      
+      let cookieLine = [
+    "Chocolate Chip", 
+    "Dbl Chocolate", 
+    "Dbl Chocolate",
+    "Chocolate Chip",
+    "Chocolate Chip",
+    "Dbl Chocolate",
+    "Chocolate Chip",
+    "Dbl Chocolate",
+    "Dbl Chocolate"
+   ];
+    
+      // TODO: Write out all of one kind
+      document.write("<h2>Chocolate Chip</h2>");
+      document.write(cookieLine[0]);
+      document.write("<br>");
+      document.write(cookieLine[3]);
+      document.write("<br>");
+      document.write(cookieLine[4]);
+      document.write("<br>");
+      document.write(cookieLine[6]);
+  
+
+      document.write("<h2>Double Chocolate</h2>");
+      document.write(cookieLine[1]);
+      document.write("<br>");
+      document.write(cookieLine[2]);
+      document.write("<br>");
+      document.write(cookieLine[5]);
+      document.write("<br>");
+      document.write(cookieLine[7]);
+      document.write("<br>");
+      document.write(cookieLine[8]);
+
+    </script>
+    
+    <h1>Reversing an array</h1>
+    <p>
+      A common interview question is to reverse queue. Let's start by reversing an
+      array. We will do it manually today. In the future we can use a for loop to
+      help us out!
+    </p>
+    <script>
+      let letters = ["a", "b", "c", "d", "e", "f", "g"];
+    
+      // EXAMPLE:
+      document.write(letters[6]);
+      document.write(letters[5]);
+      document.write(letters[4]);
+      document.write(letters[3]);
+      document.write(letters[2]);
+      document.write(letters[1]);
+      document.write(letters[0]);
+      document.write("<br><br>");
+    
+      let moreLetters = ["u", "v", "w", "x", "y", "z"];
+      // TODO: write out moreLetters in reverse order
+      document.write(moreLetters[5]);
+      document.write(moreLetters[4]);
+      document.write(moreLetters[3]);
+      document.write(moreLetters[2]);
+      document.write(moreLetters[1]);
+      document.write(moreLetters[0]);
+      document.write("<br><br>");
+    
+      let array3 = ["apples", "bananas", "carrots", "daffodils", "eggs"];
+      // TODO: write out array3 in reverse order
+      document.write(array3[4]);
+      document.write(array3[3]);
+      document.write(array3[2]);
+      document.write(array3[1]);
+      document.write(array3[0]);
+      document.write("<br><br>");
+    
+      // TODO: create and array called array4 and write it in reverse order
+      let array4 = ['Wake Up', 'Breakfast', 'Brush Teeth', 'Get Dressed', 'Got to Work', 'Dinner', 'Bath', 'Bed'];
+
+      document.write(array4[7]);
+      document.write(array4[6]);
+      document.write(array4[5]);
+      document.write(array4[4]);
+      document.write(array4[3]);
+      document.write(array4[2]);
+      document.write(array4[1]);
+      document.write(array4[0]);
+      document.write("<br><br>");
+
+    </script>
+    
+    <h1>
+      Assigning to an array
+    </h1>
+    <p>
+      You can also change an array. An array is mutable. That means "changable". You mutate an array by using the <code>=</code> assignment operator, just as you would for a variable.
+    </p>
+    
+    <p>
+      Let's swap people in line.
+    </p>
+    
+    <p>
+      <img src="https://cdn.glitch.global/ebdf8985-2fba-44be-941c-615679018f75/array-1-swap.png?v=1715814822323">  
+    </p>
+    
+    <p>
+      We start with this...
+    </p>
+    <pre>
+      array1 = ["andy", "betty", "cathy", "danna", "edward"];
+    </pre>
+    <p>
+      We want to end with this...
+    </p>
+    <pre>
+      ["betty", "andy", "cathy", "danna", "edward"];
+    </pre>
+    <p>
+      We can access them by index and assign the new names.
+    </p>
+    
+    <pre>
+      array1[0] = "betty";
+      array1[1] = "andy";
+      
+      // array1 will be this
+      // ["betty", "andy", "cathy", "danna", "edward"];
+    </pre>
+    
+    <p>
+      <script>
+        document.write(`Before swapping, the first person is...`)
+        document.write(array1[0]);
+        document.write(`...and the second person is...`)
+        document.write(array1[1]);
+        
+        array1[0] = "betty";
+        array1[1] = "andy";
+        
+        document.write(`<br>After swapping, the first person is...`)
+        document.write(array1[0]);
+        document.write(`...and the second person is...`)
+        document.write(array1[1]);
+      </script>
+    </p>
+    <p>
+      <strong>TODO: </strong> Swap the third and last person. 
+    </p>
+    <script>
+        // TODO: Swap the third and last person. 
+        array1[2] = "edward";
+        array1[4] = "cathy";
+      
+      
+        document.write(`After swapping again, the third person is...`);
+        document.write(array1[2]);
+        document.write(`...and the last person is...`);
+        document.write(array1[4]);
+
+        
+    </script>
+    <p>
+      <strong>TODO: </strong> Swap the new last and first people. 
+    </p>
+    <script>
+        // TODO: Swap the new last and first people.
+        array1[0] = "cathy";
+        array1[4] = "betty";
+      
+      
+        document.write(`After swapping another time, the first person is...`)
+        document.write(array1[0]);
+        document.write(`...and the last person is...`)
+        document.write(array1[4]);
+    </script>
+    <p>
+      Let's to some more swapping!
+    </p>
+    
+    <p>
+      Bonus: You can also swap people by directly accessing them buy index. But watch out! They will be overwritten, so you need a temperary variable.
+    </p>
+    
+    <script>
+      // BONUS: Swap by index.
+      let temp;
+      temp = array1[0];
+      array1[0] = array1[4];
+      array1[4] = temp;
+      document.write(`After swapping yet again , the first person is...`)
+      document.write(array1[0]);
+      document.write(`...and the last person is...`)
+      document.write(array1[4]);
+      document.write("<br>")
+      // BONUS TODO: try swapping more. Can you keep track of who is where in your head?
+      temp = array1[1];
+      array1[1] = array1[3];
+      array1[3] = temp;
+      document.write(`After another swapping, the second person is...`);
+      document.write(array1[1]);
+      document.write(`...and the fourth person is...`);
+      document.write(array1[3]);
+      document.write("<br>");
+
+      temp = array1[0];
+      array1[0] = array1[2];
+      array1[2] = temp;
+      document.write(`After the final swap...The first person is...`);
+      document.write(array1[0]);
+      document.write(`...and the third person is...`);
+      document.write(array1[2]);
+   </script>
+    
+    
+    <h1>
+      More Pracitice
+    </h1>
+    
+    <p>
+      This practice is up to you. Make an array of strings*. Then manipulate those strings. Try both accessing and assigning values using an index.
+    </p>
+    <p>
+      * Strings are created in JavaScript by using quotes around characters. This is called a <code>string litteral</code>
+    </p>
+    <script>
+      //
+
+      //Playing Around with Arrays...
+      document.write("<h2>Other Things To Do With Arrays:</h2>");
+
+      document.write("<h4>Add a New Item to Array:</h4>");
+      document.write("<p>The array before adding a new item is: </p>");
+      document.write(array4);
+      //Add a new item to array4 with push() method.
+      document.write("<p>The array with an added item: </p>")
+      array4.push('Midnight Snack');
+      document.write(array4);
+      //pop() method takes away the item from the end.
+      document.write("<h4>Taking an item away from an array:</h4>");
+      array4.pop();
+      document.write(array4);
+      document.write("<br><br>");
+      //another way to remove a item of an array...
+      document.write("The array before removing an item...")
+      let array7 = [1, 2, 3, 4, 5, 6, 7, 8];
+
+      document.write(array7);
+      document.write("<br><br>");
+      delete array7[3];
+      document.write(array7);
+      document.write("<br><br>");
+
+      //Removing an item from an array with the splice() method...
+      array7 = [1, 2, 3, 4, 5, 6, 7, 8];
+      spliced = array7.splice(2, 1);
+      document.write(array7);
+      document.write("<br>");
+      document.write(spliced);
+
+      
+      
+
+
+      //Turned array into a list. By looping through array4 using a for loop.
+      //Found this on w3schools https://www.w3schools.com/js/js_arrays.asp
+      document.write("<h4>Turn Array into a List:</h4>");
+      let arrayLen = array4.length;
+      //Unordered List
+      let text = "<ul>";
+      //List Items(<li>)
+      for (let i = 0; i < arrayLen; i++) {
+       text += "<li>" + array4[i] + "</li>";
+      }
+      //Closing Unordered List
+      text += "</ul>";
+      //Print List
+      document.write(text);
+
+      //Using concat() method to combine arrays.
+      document.write("<h4>Combining Arrays Together:</h4>")
+      let array5 = ['Pizza', 'Tacos', 'Pasta'];
+      let array6 = ['Steak', 'Fish', 'Chicken'];
+
+      let concateArray = array5.concat(array6);
+      document.write("<b>Array 5:</b>");
+      document.write("<br><br>");
+      document.write(array5);
+      document.write("<br><br>");
+      document.write("<b>Array 6:</b>");
+      document.write("<br><br>");
+      document.write(array6);
+      document.write("<br><br>");
+      document.write("<b>Combined Array:</b>")
+      document.write("<br><br>");
+      document.write(concateArray);
+  
+      //Reverse the order of the combined list from above.
+      document.write("<h4>Reverse order of Array(reverse() method):</h4>");
+      concateArray.reverse();
+      document.write(concateArray);
+      document.write("<br><br>");
+      document.write("Reverse back: ")
+      concateArray.reverse();
+      document.write(concateArray);
+    </script>
+     
+</body>
+</html>
