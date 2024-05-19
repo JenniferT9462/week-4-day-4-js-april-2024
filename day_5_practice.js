@@ -202,17 +202,77 @@ console.log(41/4);
 // Challenge...
 
 // TODO: create a new array based on whatever topic you like. Populate the array with at least 7 strings.
+let deserts1 = [
+  "Ice Cream",
+  "Pie",
+  "Brownies",
+  "Cake",
+  "Pudding",
+  "Cookies",
+  "Donuts",
+  "Cup Cakes",
+];
+console.log(deserts1);
 
 // TODO: Create a new array based on the old array but filter the items on any criteria you like. (word length, letter content, or anything else!) Give the new array a name that reflects its contents.
+console.log("**Array of 2 word deserts!**")
+let deserts2 = new Array();
+deserts2.push(deserts1[0]);
+deserts2.push(deserts1[7]);
+console.log(deserts2);
 
 // TODO: Create a new array that contains the lengths of the items in your first array.
+console.log("**Array of lengths!**")
+let desertNameLengths = new Array();
+desertNameLengths.push(deserts1[0].length);
+desertNameLengths.push(deserts1[1].length);
+desertNameLengths.push(deserts1[2].length);
+desertNameLengths.push(deserts1[3].length);
+desertNameLengths.push(deserts1[4].length);
+desertNameLengths.push(deserts1[5].length);
+desertNameLengths.push(deserts1[6].length);
+desertNameLengths.push(deserts1[7].length);
+console.log(desertNameLengths);
 
 // TODO: Create a new array that contains the lengths of the items in your *first* array.
+console.log("**Array of lengths!**")
+let desertNameLengths2 = new Array();
+desertNameLengths2.push(deserts1[0].length);
+desertNameLengths2.push(deserts1[1].length);
+desertNameLengths2.push(deserts1[2].length);
+desertNameLengths2.push(deserts1[3].length);
+desertNameLengths2.push(deserts1[4].length);
+desertNameLengths2.push(deserts1[5].length);
+desertNameLengths2.push(deserts1[6].length);
+desertNameLengths2.push(deserts1[7].length);
+console.log(desertNameLengths2);
 
 // TODO: Create a new array that contains the lengths of the items in your *second* array.
+console.log("**Array of  lengths of 2 word deserts!**")
+let desertNameLengths3 = new Array();
+desertNameLengths3.push(deserts1[0].length);
+desertNameLengths3.push(deserts1[7].length);
+console.log(desertNameLengths3);
 
 // TODO: find the average length of characters in each array.
+console.log("**Average Length of the first array!**");
+console.log(desertNameLengths);
+console.log(9+3+8+4+7+7+6+9);
+console.log(53/8);
+console.log("**Average length of the second array!**");
+console.log(desertNameLengths3);
+console.log(9+9);
+console.log(18/2);
 
 // TODO: find the sum of the lengths of characters in each array.
+console.log("**The sum of characters in the first array!**");
+console.log(desertNameLengths);
+console.log(9+3+8+4+7+7+6+9);
+console.log("**The sum of characters in the second array!**");
+console.log(desertNameLengths3);
+console.log(9+9);
 
 // TODO: Which is longer? By how much? Log what you find to the Console.
+console.log(`${desertNameLengths} sum is larger than ${desertNameLengths3}.`);
+console.log("**The sum of array1 is longer by:**");
+console.log(53-18);
