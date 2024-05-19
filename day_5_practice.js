@@ -25,6 +25,9 @@ let longestName = array1[0];
 console.log(`${longestName} has the longest name.`);
 
 // TODO: find the animal with the shortest name.
+let shortestName = array1[2];
+console.log(`${shortestName} has the shortest name.`);
+
 
 // Difference:
 // strings are immutable. They can't be altered.
@@ -45,6 +48,9 @@ let zooAnimals = ["elephant", "walrus", "kitten", "dairy cow", "girrafe"];
 zooAnimals[2] = "lion";
 console.log(zooAnimals); // now contains lion
 // TODO: change "dairy cow" to a more approriate animal for a zoo. Use console.log to show the change in the array.
+zooAnimals[3] = "Flamingo";
+console.log(zooAnimals);
+
 
 // Strings are created fully formed.
 // Arrays can be built and changed.
@@ -53,6 +59,9 @@ zooAnimals.push("wolf"); // push() adds to the end
 zooAnimals.push("tiger"); // push() adds to the end
 console.log(zooAnimals);
 // TODO: add two more animals using the push method
+zooAnimals.push("Monkey");
+zooAnimals.push("Bear");
+console.log(zooAnimals);
 
 // Example: You can take a substring of a string
 console.log("**** String.substring ****");
@@ -68,10 +77,15 @@ console.log(twoAnimals);
 // TODO: take a substring of the word
 console.log("**** TODO: String.substring ****");
 let string5 = "panther";
+let string6 = string5.substring(1, 4);
+console.log(`${string6} is in ${string5}.`);
 
 // TODO: take an slice of an array.
-console.log("**** TODO: String.substring ****");
+console.log("**** TODO: String.slice ****");
 let domesticAnimals = ["dog", "cat", "goat", "chicken", "cow"];
+twoAnimals = domesticAnimals.slice(0, 2);
+console.log(twoAnimals);
+
 
 // Practice
 console.log("**** TODO: Practice ****");
@@ -85,9 +99,15 @@ let zooAnimals2 = [
   "tiger",
 ];
 // TODO: in zooAnimals2, replace all the animals with names longer than 6 characters with animals with shorter names. Log it to the console.
-
+zooAnimals2[0] = "snake";
+zooAnimals2[3] = "bear";
+zooAnimals2[4] = "seal";
+console.log(zooAnimals2);
 // TODO: Now replace all animals with an "i" in their name to a different animal. Log it to the console.
-
+zooAnimals2[2] = "Monkey";
+zooAnimals2[4] = "Parot";
+zooAnimals2[6] = "goat";
+console.log(zooAnimals2);
 // Let's try something slightly different.
 
 // Instead of changing the array, we will
@@ -107,6 +127,7 @@ console.log("**** Example: countries with an 'o' ****");
 // Example:
 // Make a new list called countries2 with only countries with an "o" in them. Use Array.push().
 let countries2 = new Array();
+
 // Note: you can do this, it is the same in JS...
 // let countries2 = []; // Same as: new Array()
 countries2.push(countries1[2]);
@@ -117,10 +138,18 @@ console.log(countries2);
 // TODO: make a new array with only contries with an e in them.
 console.log("**** TODO: countries with an 'e' ****");
 let countries3 = new Array();
+countries3.push(countries1[0]);
+countries3.push(countries1[2]);
+countries3.push(countries1[3]);
+countries3.push(countries1[4]);
+console.log(countries3);
 
 // TODO: make a new array with only contries with less than 8 in them.
 console.log("**** TODO: countries less than 8 characters in length ****");
 let countries4 = new Array();
+countries4.push(countries1[1]);
+countries4.push(countries1[2]);
+console.log(countries4);
 
 // Example: make a new array containing the length of the animal names.
 console.log("**** Examples: length of animal names ****");
@@ -137,13 +166,38 @@ console.log(animalNameLengths);
 
 // TODO: make a new array containing the length of the country names.
 console.log("**** TODO: length of country names ****");
+let countriesNameLengths = new Array();
+countriesNameLengths.push(countries1[0].length);
+countriesNameLengths.push(countries1[1].length);
+countriesNameLengths.push(countries1[2].length);
+countriesNameLengths.push(countries1[3].length);
+countriesNameLengths.push(countries1[4].length);
+countriesNameLengths.push(countries1[5].length);
+console.log(countriesNameLengths);
 
 // TODO: make a new array containing only the countries with names 8 characters or longer.
 console.log("**** TODO: country names 8 chars or longer ****");
+let longerCountryNames = new Array();
+longerCountryNames.push(countries1[0]);
+longerCountryNames.push(countries1[3]);
+longerCountryNames.push(countries1[4]);
+longerCountryNames.push(countries1[5]);
+console.log(longerCountryNames);
 
 // TODO: find the average length of all the countries' names
+console.log(13+6+6+9+11+8);
+console.log(53/6);
 
 // TODO: find the average length of only the countries names which are 8 characters or longer
+let longerCountryLengths = new Array();
+longerCountryLengths.push(countries1[0].length);
+longerCountryLengths.push(countries1[3].length);
+longerCountryLengths.push(countries1[4].length);
+longerCountryLengths.push(countries1[5].length);
+console.log(longerCountryLengths);
+console.log(13+9+11+8);
+console.log(41/4);
+
 
 // Challenge...
 
